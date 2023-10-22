@@ -1,8 +1,11 @@
 <label>Server Name</label>
 <hr>
+<!-- <input type="text" 
+       class="text formcontrol"
+       (input)="onKeyPress($event)"> -->
 <input type="text" 
        class="text formcontrol"
-       (input)="onKeyPress($event)">
+       [(ngModel)]="serverName">
 <p>{{serverName}}</p>
 
 <button class="btn btn-primary"
@@ -12,5 +15,7 @@
     <p>{{serverCreationStatus}}</p>
     <!-- Property Binding -->
     <!-- We are setting the property of the element with the value instead of html attribute , when [] is around the attribute -->
-<app-server></app-server>
-<app-server></app-server>
+<!-- <app-server></app-server>
+<app-server></app-server> -->
+
+<div app-server></div>

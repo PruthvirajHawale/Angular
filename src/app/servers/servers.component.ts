@@ -1,4 +1,4 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-servers',
@@ -19,7 +19,7 @@ export class ServersComponent {
     onCreateServer(){
       this.serverCreationStatus = 'Server was created!!!!!!'
     }
-    onKeyPress(event:Event){
-      return this.serverName = (<HTMLInputElement>event.target).value
-    }
+    // onKeyPress(event:Event){
+    //   return this.serverName = (<HTMLInputElement>event.target).value
+    // }
 }
